@@ -1,0 +1,66 @@
+// splite
+@mixin splite {
+	display: block;
+	overflow: hidden;
+	text-indent: -5260px;
+}
+@mixin splite-reset {
+	text-indent: 0;
+}
+
+// clearfix
+@mixin clearfix {
+	zoom: 1;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+		height: 0;
+	}
+}
+
+// icon
+@mixin icon($name) {
+	content: #{'\'\\'+map-get($icons, $name)+'\''};
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	text-decoration: none !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// container-l
+@mixin container-l{
+	display: flex;
+	max-width: 112rem;
+	box-sizing: border-box;
+	padding: 0 6.4rem;
+	margin-left: auto;
+	// tb
+	@media screen and (max-width: $size-tb){
+		display: block;
+		max-width: none;
+		padding: 0;
+	}
+}
+
+// line-clamp-2
+@mixin line-clamp-2{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+// line-clamp-3
+@mixin line-clamp-3{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@import "_foundation/fonts";
+@import "_foundation/variables";
+@import "_foundation/mixins";
+@import "_object/component/editor";
+
+body {
+	@include editor(true);
+}
+.wp-block.editor-post-title.editor-post-title__block{
+	margin: 30px auto;
+}
+.editor-post-title__input {
+	font-size: 35px;
+	font-weight: 900;
+	font-family: $font;
+	line-height: 1.43;
+	color: $color-text;
+	padding-bottom: 29px;
+	margin: 0 0 40px;
+}
+.wp-block {
+	max-width: 1088px;
+}
+h3.wp-block,
+p.wp-block,
+.wp-block-buttons.wp-block {
+	max-width: 962px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.block-editor-block-list__layout .block-editor-block-list__block[data-align=left],
+.block-editor-block-list__layout .block-editor-block-list__block[data-align=right] {
+	height: auto;
+}
+.block-editor-block-list__layout .block-editor-block-list__block[data-align=left]>.block-editor-block-list__block-edit {
+	float: none;
+	margin-right: 0;
+	margin-left: 0;
+}
+.block-editor-block-list__layout .block-editor-block-list__block[data-align=right]>.block-editor-block-list__block-edit {
+	float: none;
+	margin-right: 0;
+	margin-left: 0;
+}

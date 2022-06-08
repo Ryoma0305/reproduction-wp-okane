@@ -1,0 +1,37 @@
+// array
+$prefix_array: '-webkit-', '-moz-', '-o-', '-ms-', '';
+
+// font
+$font: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+$font_tamma: 'Baloo Tamma 2', cursive;
+
+// color
+$color-text: #1a1a1a;
+$color-sub-text: #808080;
+$color-corner: #4c4c4c;
+$color-yellow: #fbe21f;
+$color-blue: #00adf1;
+$color-bg: #f5f5f5;
+$color-border: #e5e5e5;
+
+// device
+$size-tb: 1200px;
+$size-sp: 767px;
+$size-sp_s: 639px;
+
+// transition
+$duration: 0.4s;
+$easing: cubic-bezier(0.215, 0.61, 0.355, 1); // cubicEaseOut
+
+// icons
+$icons: (
+  'arw_t': 'e900',
+  'arw_r': 'e901',
+  'arw_b': 'e902',
+  'arw_l': 'e903',
+  'search': 'e904',
+  'link': 'e905',
+  'anchor': 'e906',
+  'twitter': 'e907',
+  'facebook': 'e908'
+);

@@ -1,0 +1,156 @@
+/* m-pagination */
+.m-pagination{
+  position: relative;
+  margin-top: 8.4rem;
+  a{
+    text-decoration: none;
+    display: block;
+    color: $color-text;
+  }
+  // &__prev,
+  // &__next
+  &__prev,
+  &__next{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5rem;
+    margin: auto;
+    &:before{
+      transition: transform $duration $easing 0s;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 2.4rem;
+      height: 2.4rem;
+      font-size: 2.4rem;
+      margin: auto;
+    }
+    &:after{
+      transition: transform $duration $easing 0s;
+      position: absolute;
+      display: block;
+      content: '';
+      top: -0.2rem;
+      bottom: 0;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background: $color-text;
+      margin: auto;
+      transform: scale(0);
+    }
+    html.notouch &:hover{
+      &:after{
+        transform: scale(1);
+      }
+    }
+  }
+  // &__prev
+  &__prev{
+    left: -1.6rem;
+    &:before{
+      @include icon(arw_l);
+    }
+    &:after{
+      left: 1.6rem;
+    }
+    html.notouch &:hover{
+      &:before{
+        transform: translateX(1.6rem);
+      }
+    }
+  }
+  // &__next
+  &__next{
+    right: -1.6rem;
+    &:before{
+      @include icon(arw_r);
+    }
+    &:after{
+      right: 1.6rem;
+    }
+    html.notouch &:hover{
+      &:before{
+        transform: translateX(-1.6rem);
+      }
+    }
+  }
+  // &__list
+  &__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+      display: flex;
+      font-size: 1.6rem;
+      font-weight: 900;
+      line-height: 1;
+      &.sp{
+        display: none;
+      }
+      &.more{
+        padding: 0 1.5rem 0.8rem;
+      }
+      // hover
+      &.is-current{
+        a{
+          background: $color-yellow;
+          &:after{
+            display: none;
+          }
+        }
+      }
+    }
+    a{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      height: 5rem;
+      font-size: 1.6rem;
+      font-weight: 900;
+      border-radius: 50%;
+      &:after{
+        transition: transform $duration $easing 0s;
+        position: absolute;
+        display: block;
+        content: '';
+        right: 0;
+        bottom: 0.6rem;
+        left: 0;
+        width: 0.4rem;
+        height: 0.4rem;
+        background: $color-text;
+        border-radius: 50%;
+        margin: auto;
+        transform: scale(0);
+      }
+      html.notouch &:hover{
+        &:after{
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+// tb
+@media screen and (max-width: $size-tb){
+  .m-pagination{
+    margin-top: 5rem;
+    // &__list
+    &__list{
+      li{
+        display: none;
+        &.is-current,
+        &.sp-show,
+        &.sp{
+          display: block;
+        }
+      }
+    }
+  }
+}

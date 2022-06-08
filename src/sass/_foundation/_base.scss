@@ -1,0 +1,39 @@
+/* html, body */
+html {
+	font-size: 10px;
+	// tb
+	@media screen and (max-width: $size-tb){
+		font-size: 2.416vw;
+	}
+}
+body {
+	color: $color-text;
+	font-family: $font;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.786;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* selection */
+::-moz-selection {
+	background: $color-yellow;
+	color: $color-text;
+}
+::selection {
+	background: $color-yellow;
+	color: $color-text;
+}
+
+
+/* a */
+a {
+	transition: all $duration $easing 0s;
+	transition-property: border, background, color;
+	color: $color-blue;
+	html.notouch &:hover{
+		text-decoration: none;
+	}
+}

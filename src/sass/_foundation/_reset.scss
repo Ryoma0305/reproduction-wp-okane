@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+/* img */
+img,
+/* box */
+div, p, blockquote,
+/* heading */
+h1, h2, h3, h4, h5, h6,
+/* list */
+ul, ol, li, dl, dt, dd,
+/* form */
+form, fieldset, textarea,
+/* address */
+address,
+/* html5 */
+main, article, aside, dialog, figure, footer, header, hgroup, nav, section
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	text-decoration: none;
+	list-style-type: none;
+}
+/* html5 */
+main, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+/* heading */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: inherit;
+}
+/* table */
+table {
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th, td {
+	text-align: left;
+	vertical-align: top;
+}
+caption {
+	text-align: left;
+}
+/* a */
+a, a:focus, a:hover, a:active {
+	outline: none;
+}
+/* input,textarea */
+input,
+textarea,
+select{
+	appearance: none;
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	box-sizing: border-box;
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+textarea{
+	display: block;
+	resize: none;
+}
+select::-ms-expand{
+	display: none;
+}
+/* button */
+button {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border-radius: none;
+	background: none;
+	border: none;
+	outline: 0;
+	appearance: none;
+	cursor: pointer;
+}
+/* form */
+input, input:focus, input:hover, input:active,
+textarea, textarea:focus, textarea:hover, textarea:active {
+	outline: none;
+}
+/* img */
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
