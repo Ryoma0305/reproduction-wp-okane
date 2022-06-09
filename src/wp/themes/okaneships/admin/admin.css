@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+#wpbody-content #dashboard-widgets .postbox-container {
+  width: 100% !important;
+}
+#postbox-container-3,
+#postbox-container-4 {
+  display: none;
+}
+
+/* ダッシュボード
+--------------------------------------------------*/
+#dashboard_site_health {
+  display: none;
+}
+#dashboard-widgets .post-activity-widget .post-activity-block h3 {
+  margin: 30px 0 10px;
+  font-weight: 700;
+}
+#dashboard-widgets .post-activity-widget .post-activity-block h3:first-child {
+  margin-top: 0;
+}
+#dashboard-widgets .post-activity-widget .post-activity-block .item {
+  display: flex;
+  align-items: center;
+}
+#dashboard-widgets .post-activity-widget .post-activity-block .item + .item {
+  margin-top: 20px;
+}
+#dashboard-widgets
+  .post-activity-widget
+  .post-activity-block
+  .dashboard-post-list
+  .item__img {
+  width: 375px;
+  flex-shrink: 0;
+  margin: 0;
+}
+#dashboard-widgets
+  .post-activity-widget
+  .post-activity-block
+  .dashboard-post-list
+  .item__img
+  img {
+  position: relative;
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  z-index: 1;
+}
+#dashboard-widgets
+  .post-activity-widget
+  .post-activity-block
+  .dashboard-post-list
+  .item__txt {
+  margin: 0 0 0 20px;
+}
+#dashboard-widgets .post-activity-widget .post-activity-block .item__ttl {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5625;
+  margin: 0;
+}
+#dashboard-widgets .post-activity-widget .post-activity-block .item__corner {
+  font-size: 12px;
+  line-height: 1.67;
+  color: #4c4c4c;
+  margin: 10px 0 0;
+}
+#dashboard-widgets .post-activity-widget .post-activity-block .item__corner li {
+  display: inline-block;
+  margin: 0;
+}
+#dashboard-widgets
+  .post-activity-widget
+  .post-activity-block
+  .item__corner
+  li:after {
+  content: ",";
+}
+#dashboard-widgets
+  .post-activity-widget
+  .post-activity-block
+  .item__corner
+  li:last-child:after {
+  content: "";
+}
+#dashboard-widgets .post-activity-widget .post-activity-block .item__meta {
+  display: flex;
+  margin: 0 0 15px;
+}
+#dashboard-widgets .post-activity-widget .post-activity-block .item__date {
+  font-size: 14px;
+  line-height: 1;
+  color: #1a1a1a;
+  margin: 5px 10px 0 0;
+}
+#dashboard-widgets .post-activity-widget .post-activity-block .item__cat {
+  display: block;
+  margin: 0 0 -5px;
+  font-size: 0;
+}
+#dashboard-widgets .post-activity-widget .post-activity-block .item__cat li {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #ffffff;
+  background: #1a1a1a;
+  border-radius: 11px;
+  margin: 0 5px 5px 0;
+  padding: 3px 14px 2px;
+}
+
+@media screen and (max-width: 767px) {
+  #dashboard-widgets .post-activity-widget .post-activity-block .item {
+    display: block;
+  }
+  #dashboard-widgets .post-activity-widget .post-activity-block .item + .item {
+    margin-top: 30px;
+  }
+  #dashboard-widgets
+    .post-activity-widget
+    .post-activity-block
+    .dashboard-post-list
+    .item__img {
+    width: 100%;
+    margin: 0;
+  }
+  #dashboard-widgets
+    .post-activity-widget
+    .post-activity-block
+    .dashboard-post-list
+    .item__txt {
+    margin: 15px 0 0 0;
+  }
+}
